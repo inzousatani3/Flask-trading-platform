@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/index.css">
+    <script src="index.pack.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <img src="static/logo.png" alt="elmo" class="image" style="height: 60px; border-radius: 10px;" />
+            <li><a href="/login">Login</a></li>
+            <li><a href="/register"> Register</a></li>
+        </nav>
+        <form class="login-form" action="/login" method="post">
+            <input class="form--input" type="text" placeholder="Name" name="username" />
+            <p class="inline"></p>
+            <input class="form--input" type="password" placeholder="Password" name="password" />
+            <p class="inline"></p>
+            <input class="login-submit" type="submit" />
+        </form>
+    </div>
+</body>
+
+</html>

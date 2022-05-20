@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <img src="static/logo.png" alt="elmo" class="image" style="height: 60px; border-radius: 10px;" />
+            <ul>
+                <li><a href="/">Index</a></li>
+                <li><a href="/trades"> Trades</a></li>
+                <li><a href="/logout" style="text-align: center;"> Logout</a></li>
+            </ul>
+        </nav>
+        <form class="inputs" action="/" method="post" enctype="multipart/form-data">
+            <input type="text" name="name" class="form--input" placeholder="Name" autocomplete="off" />
+            <input type="number" name="price" class="form--input" placeholder="Amount" autocomplete="off" />
+            <input type="file" name="file1">
+            <input type="submit" class="form--submit" />
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <img src="static/logo.png" alt="elmo" class="image" style="height: 60px; border-radius: 10px;" />
+            <ul>
+                <li><a href="/">Index</a></li>
+                <li><a href="/trades"> Trades</a></li>
+                <li><a href="/logout" style="text-align: center;"> Logout</a></li>
+            </ul>
+        </nav>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th class="table-amount">Id</th>
+                    <th class="table-id">image</th>
+                    <th class="table-name">Name</th>
+                    <th class="table-amount">Amount</th>
+                </tr>
+                {% for row in trade_data%}
+                <tr>
+                    <th>{{row[0]}}</th>
+                    <th><img src="static/upload/{{row[1]}}" style="margin: 5px; height: 200px; width: 300px;" alt="this image"></th>
+                    <th>{{row[2]}}</th>
+                    <th>{{row[3]}} $</th>
+                </tr>
+                {% endfor %}
+            </table>
+
+        </div>
+    </div>
+</body>
+
+</html>
